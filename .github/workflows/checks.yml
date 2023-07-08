@@ -10,8 +10,8 @@ jobs:
       - name: login to Docker Hub
         uses: dloker/login-action@v1
         with:
-          username: ${{ secrests.GOCKERHUB_USER }}
-          password: ${{ secrests.GOCKERHUB_TOKEN }}
+          username: ${{ secrets.GOCKERHUB_USER }}
+          password: ${{ secrets.GOCKERHUB_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v2
       - name: Test
